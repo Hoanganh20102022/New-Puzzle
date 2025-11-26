@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Canvas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin:0; background:#222; display:flex; justify-content:center; align-items:center; height:100vh; }
+    canvas { background:#000; }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="200" height="400"></canvas>
+  <script>
+    const canvas = document.getElementById('game');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'red';
+    ctx.fillRect(50, 50, 100, 100); // vẽ 1 khối đỏ
+  </script>
+</body>
+</html>
